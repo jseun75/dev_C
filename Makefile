@@ -1,8 +1,8 @@
 TARGET=one
 OBJECTS=main.o
 
-$TARGET:$OBJECTS
+$TARGET : $OBJECTS
   gcc -o $TARGET $OBJECTS
   
-main.o:main.c
+main.o : main.c
   gcc -o main.c
